@@ -1,0 +1,32 @@
+php artisan make:model Models\\Colaborador -m
+
+php artisan make:controller ColaboradoresController --resource
+
+php artisan make:model Models\\Usuario -m
+
+npm i bootstrap
+
+create table tbclientes(
+	id_cliente int primary key AUTO_INCREMENT,
+	nome varchar(220) NOT NULL,
+    flag_excluido int DEFAULT 0
+)
+
+create table tbusuarios(
+	id_usuario int primary key AUTO_INCREMENT,
+   	nome_usuario varchar(220) not null,
+	email varchar(220) NOT NULL,
+    senha varchar(32) NOT NULL,
+    flag_excluido int DEFAULT 0
+)
+
+
+php artisan make:controller DashboardController --resource
+
+
+
+
+create table tbcolaborador(
+	id_colaborador int primary key AUTO_INCREMENT,
+	nome varchar(220) not null
+)
