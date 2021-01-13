@@ -1,4 +1,25 @@
 .crud-option
 {
-    padding: 10px;
+    padding: 10px 0px;
+}
+
+.crud-form
+{   
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FFF;
+
+}
+
+.btn-crud-option
+{
+    background-color: #ecf0f1;
+    border: 1px solid #dfe6e9;
+}
+
+.btn-crud-option:hover
+{
+    background-color: #dfe6e9;
+    border: 1px solid #dfe6e9;
 }

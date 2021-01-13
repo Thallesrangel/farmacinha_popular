@@ -28,5 +28,28 @@ php artisan make:controller DashboardController --resource
 
 create table tbcolaborador(
 	id_colaborador int primary key AUTO_INCREMENT,
-	nome varchar(220) not null
+	nome varchar(220) not null,
+	sobrenome varchar(220) not null,
+	cpf varchar(100) not null,
+	email varchar(100) not null,
+	id_permissao int not null
 )
+
+
+create table tbusuario(
+	id_usuario int primary key AUTO_INCREMENT,
+	nome varchar(220) not null,
+	sobrenome varchar(220) not null,
+	data_nascimento date not null,
+	cpf varchar(100) not null,
+	email varchar(100) not null,
+	contato varchar(100),
+	id_estado int not null,
+	id_municipio int not null,
+	bairro varchar(220) null,
+	rua varchar(220) null,
+	numero_casa varchar(220),
+	referencia varchar(220)
+)
+
+

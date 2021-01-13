@@ -10,13 +10,14 @@
         border: 2px solid #ecf0f1; 
         border-radius: 10px;
     }
+ 
     .login img{
         max-height: 70px;
     }
     </style>
 
     <div class="container login">
-        <div class="row h-100 d-flex justify-content-md-center align-items-center vh-100">
+        <div class="row d-flex justify-content-md-center align-items-center vh-100">
             <div class="container tamanho-largura shadow-lg p-3 mb-5 bg-white rounded">
                     
                 <div class="d-flex justify-content-center">

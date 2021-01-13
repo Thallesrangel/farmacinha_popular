@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-white shadow bg-white rounded">
-    <a class="navbar-brand logo" href="#"><img class="img-fluid" src="{{ asset('logo-black.png') }}"></a>
+    <a class="navbar-brand logo" href="{{ route('home') }}"><img class="img-fluid" src="{{ asset('logo-black.png') }}"></a>
 
     <header class="ml-auto">
         <!-- Responsive -->
@@ -12,7 +12,11 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="adocao">Rastreamento</a>
+                <a class="nav-link" href="adocao">Unidades</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('home.rastreamento') }}">Rastreamento</a>
             </li>
             
 

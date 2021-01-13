@@ -12,7 +12,6 @@
         <title>Farmacinha Popular</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel='icon' href="{{ asset('favicon.png') }}" type='image/x-icon' sizes="16x16" />
-
 </head>
 <body>
     <div class="wrapper">
@@ -22,7 +21,7 @@
         </nav>
         
         <div id="content">
-            <div class="navbar-div">
+            <div class="navbar-div d-flex justify-content-end">
                 @include('includes.navbar')
             </div>
             @yield('content')

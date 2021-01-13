@@ -21,6 +21,7 @@
 <body>
     @include('includes.navbar-home')
     @yield('content')
+    @include('includes.footer-home')
 
     <script type="text/javascript">
         /* Responsive - Define como ativo a classe toggleMenu */

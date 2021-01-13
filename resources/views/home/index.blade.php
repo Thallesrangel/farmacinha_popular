@@ -15,4 +15,13 @@
         </div>
     </div>
 
+    <div class="container text-center mt-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-md-8">
+                <h2>Registrar e acompanhar com rapidez.</h2>
+                <p>O PetVac é pensando para que cada animal registrado seja devidamente acompanhando de forma ágil, eficaz e eficiente.</p>
+            </div>
+        </div>
+    </div>
+
 @endsection

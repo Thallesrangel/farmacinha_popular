@@ -9,13 +9,13 @@ class ColaboradoresController extends Controller
 {
     public function index()
     {   
-        $data = Colaborador::get()->toArray();
+        $data = Colaborador::paginate(10);
         return view('colaboradores.index', ['dados' => $data]);
     }
 
     public function create()
     {
-    
+        return view('colaboradores.register');
     }
 
     public function store(Request $request)
@@ -38,9 +38,12 @@ class ColaboradoresController extends Controller
     
     }
 
-    public function destroy($id)
+    public function delete($idColaborador)
     {
-    
+        $data = Colaborador::findOrFail($idColaborador);
+        $data->delete();
+        
+        return redirect()->route('dashboard.colaborador');
     }
 
     public function deleteAll(Request $request)
